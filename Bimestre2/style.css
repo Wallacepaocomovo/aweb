@@ -19,12 +19,16 @@ header {
     color: #BFB6AA;
     padding: 1px 2px;
     text-align: center;
-} 
 
+} 
+h1, h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700; /* Para deixar os títulos em negrito */
+}
 
 body {
     background-color: #BFB6AA;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Tahoma', sans-serif;
 }
 
 .bimestre {
@@ -51,32 +55,10 @@ body {
 
 a:link,
 a:visited {
-    color: darkred;
+    color: #BFB6AA;
     text-decoration: none;
 }
-a:hover {
-    color: red;
-    text-decoration: underline;
+nav a:hover {
+    color: rgb(66, 77, 77);
+
 }
-
-.ifrn {
-    color: rgb(80, 80, 80);
-    font-size: small;
-}
-
-.titulo {
-    width: 400px;
-    margin: 40px 0;
-    padding: 0px 10px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 30px;
-}
-
-.topo {
-    width: 400px;
-}
-
-
