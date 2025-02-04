@@ -182,50 +182,62 @@ footer a:hover {
     color: #666;
 }
 
-.container {
-    width: 100%;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BFB6AA; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os cards */
+/* Container dos cards */
+.cards {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo dos Cards */
+.card {
+    display: inline-block; /* Faz os cards ficarem lado a lado */
+    width: 200px; /* Define um tamanho fixo */
+    background-color: #38403E;
+    border: 2px solid #fefff9; /* Adiciona a borda */
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
+    margin: 30px; /* Dá espaço entre os cards */
+    vertical-align: top; /* Alinha os cards corretamente */
 }
 
-.cards {
-    margin: 0 auto;
-    width: 80%;
-    display: flex; /* Flexbox para alinhar os cards lado a lado */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte se necessário */
-    justify-content: center; /* Centraliza os cards dentro do container */
-}
-
-.card {
-    width: 200px;
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Imagens dentro dos Cards */
 .card img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px #38403E;
+    margin-top: -6px
 }
 
+/* Títulos dos Cards */
 .card h3 {
-    font-size: 1.2rem;
     margin-top: 10px;
-    color: #333;
+    font-size: 18px; 
+    background-color: #BFB6AA;
+    font-family: 'Tahoma', sans-serif;
 }
 
+/* Texto dentro dos Cards */
 .card p {
-    font-size: 1rem;
-    color: #777;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: -70px;
+    color: #BFB6AA;
+    
 }
+#causos{
+    text-align: center;
+    width: 60%; 
+    margin: 50px auto; 
+}
+
