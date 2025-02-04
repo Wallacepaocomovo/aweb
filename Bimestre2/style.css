@@ -241,3 +241,72 @@ body {
     margin: 50px auto; 
 }
 
+#Habilidades {
+    background-color: #38403E;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Habilidades h3 {
+    color: #fefff9;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fefff9;
+    padding-bottom: 5px;
+}
+
+#Habilidades ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#Habilidades li {
+    margin-bottom: 20px;
+}
+
+#Habilidades li strong {
+    color: #fefff9;
+    font-size: 18px;
+}
+
+#Habilidades p {
+    color: #fefff9;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+#Contatos {
+    background-color: #fefff9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Contatos h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #fefff9;
+    padding-bottom: 5px;
+}
+
+#Contatos p {
+    color: #202A36;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilo para links de contato */
+#Contatos a {
+    color: #202A36;
+    text-decoration: none;
+}
+
+#Contatos a:hover {
+    text-decoration: underline;
+}
+
+
