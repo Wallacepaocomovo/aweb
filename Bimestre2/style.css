@@ -3,7 +3,7 @@ img {
     margin: 50px auto;
     border-radius: 80%;
     border: 5px solid #2c282e;
-    max-width: 300px;  /* Define a largura da imagem */
+    max-width: 300px; 
     height: 150px;
 }
 
@@ -38,7 +38,7 @@ body {
     font-family: 'Tahoma', sans-serif;
 }
 body {
-    font-size: 1.4rem; /* Ajusta o texto para ser 1.2 vezes o tamanho da fonte base */
+    font-size: 1.4rem;
   }
 
 
@@ -186,23 +186,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #BFB6AA; /* Cor de fundo */
-    color: #333; /* Cor do texto */
+    background-color: #BFB6AA;
+    color: #333; 
 }
 
-/* Estilo para os cards */
-/* Container dos cards */
+
 .cards {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Estilo dos Cards */
+
 .card {
-    display: inline-block; /* Faz os cards ficarem lado a lado */
-    width: 200px; /* Define um tamanho fixo */
+    display: inline-block;
+    width: 200px; 
     background-color: #38403E;
-    border: 2px solid #fefff9; /* Adiciona a borda */
+    border: 2px solid #fefff9; 
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -242,7 +241,7 @@ body {
 }
 
 #Habilidades {
-    background-color: #38403E;
+    background-color: #BFB6AA;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -250,10 +249,10 @@ body {
 }
 
 #Habilidades h3 {
-    color: #fefff9;
+    color: #38403E;
     font-size: 24px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #fefff9;
+    border-bottom: 2px solid #38403E;
     padding-bottom: 5px;
 }
 
@@ -267,13 +266,13 @@ body {
 }
 
 #Habilidades li strong {
-    color: #fefff9;
+    color: #38403E;
     font-size: 18px;
 }
 
 #Habilidades p {
-    color: #fefff9;
-    font-size: 16px;
+    color: #38403E;
+    font-size: 23px;
     line-height: 1.6;
     margin-top: 5px;
 }
@@ -295,7 +294,7 @@ body {
 
 #Contatos p {
     color: #202A36;
-    font-size: 16px;
+    font-size: 25px;
     line-height: 1.6;
 }
 
@@ -307,6 +306,28 @@ body {
 
 #Contatos a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: #38403E; /* Cor escura para contraste */
+    color: rgb(224, 210, 210);
+    text-align: center; /* Centraliza todo o conteúdo dentro do footer */
+    padding: 50px;
+    margin-top: 90px;
+    border-radius: 0 0 15px 10px;
+}
+
+footer p {
+    margin: 10px 0; /* Espaçamento entre os parágrafos */
+}
+
+footer a {
+    color: #ffffff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado quando passar o mouse */
 }
 
 
