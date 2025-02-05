@@ -54,3 +54,27 @@ h1 {
 .topo {
     width: 400px;
 }
+
+.cor1{
+    background-color: #BFB6AA; 
+    width: 25px;
+    
+}
+
+.cor2{
+    background-color: #2c282e; 
+    width: 25px;
+    
+}
+
+.cor3{
+    background-color: #38403E; 
+    width: 25px;
+    
+}
+
+.bimPar ul{
+    display: flex;
+    gap: 10px;
+}
+
