@@ -1,0 +1,374 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+:root {
+    --cor-principal: #8C472E; 
+    --cor-secundaria: #444359; 
+    --cor-destaque: #F2E4DC; 
+    --cor-fundo: #fff;
+    --cor-texto: #333;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* GRID PRINCIPAL */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(--cor-destaque);
+}
+
+/* HEADER */
+header {
+    grid-column: span 12;
+    width: 100%;
+    height: 100px;
+    background: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav ul li a i {
+    font-size: 1.2rem;
+}
+
+/* HERO */
+#hero {
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 100px 40px 0;
+    background: var(--cor-fundo);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    padding-left: 100px;
+    background-color: var(--cor-secundaria);
+}
+
+.hero-container h1 {
+    font-size: 3rem;
+    color: var(--cor-principal);
+    line-height: 1.5;
+    text-shadow: 10px 5px 8px rgba(0, 0, 0, 0.5), 0 0 100px rgba(255, 255, 255, 0.7); 
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 25px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+}
+
+#hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    transition: transform 0.1s ease;
+}
+
+#hero img:hover {
+    transform: scale(1.1);
+}
+
+/* SOBRE MIM */
+#sobre-mim {
+    grid-column: span 8;
+    margin: 100px auto 0;
+    padding: 40px;
+    background: var(--cor-fundo);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 70%; 
+     
+}
+
+#sobre-mim h2 {
+    font-size: 2rem;
+    text-align: left;
+    color: var(--cor-principal);
+}
+
+#sobre-mim p {
+    font-size: 1.1rem;
+    text-align: center;
+    width: 60%; 
+    margin: 50px auto; 
+}
+
+/* CURIOSIDADES */
+#curiosidades {
+    grid-column: span 8;
+    margin: 100px auto 0;
+    padding: 40px;
+    background: var(--cor-fundo);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#curiosidades h2 {
+    font-size: 2rem;
+    text-align: left;
+    color: var(--cor-principal);
+}
+
+/* CARDS */
+.cards-container {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1); 
+}
+
+.card p {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1); 
+}
+
+/* FOOTER */
+footer {
+    grid-column: span 12;
+    background: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 100px;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-container p {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.footer-container a {
+    color: var(--cor-destaque); 
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE PARA DESKTOPS GRANDES (1440 x 1024) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    header {
+        padding: 0 60px;
+    }
+
+    #hero {
+        padding: 120px 60px 0;
+    }
+
+    .hero-container {
+        padding-left: 100px;
+    }
+
+    .hero-container h1 {
+        font-size: 3.5rem;
+    }
+
+    #hero img {
+        width: 450px;
+        height: 450px;
+    }
+
+    #sobre-mim, #curiosidades {
+        padding: 60px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(12, 8fr);
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS (1024px) */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 80px;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 150px 20px 0;
+    }
+
+    .hero-container {
+        padding: 20px;
+    }
+
+    .hero-container h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero img {
+        width: 350px;
+        height: 350px;
+    }
+
+    #sobre-mim, #curiosidades {
+        grid-column: span 12;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS PEQUENAS (MOBILE) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+        padding: 100px 20px 0;
+        text-align: center;
+    }
+
+    .hero-container {
+        padding: 10px;
+    }
+
+    .hero-container h1 {
+        font-size: 2rem;
+    }
+
+    #hero img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
